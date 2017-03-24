@@ -1,0 +1,25 @@
+---
+layout: default
+title: Team
+permalink: /team/
+---
+
+<div class="post">
+  <h1 class="title text-center offset-header">Meet our teammembers</h1>
+  {% for member in site.data.team %}
+  <section id="{{ member[0] }}" class="author post-inner">
+    {% if member[1].pic %}
+      <img src="/images/{{ member[1].pic }}" alt="member photo"/>
+    {% endif %}
+    <h3 class="sub-title">{{ member[1].name }}</h3>
+    <ul class="list-inline">
+      <li><a target="_blank" rel="nofollow" href="https://github.com/{{ member[1].github }}" title="Github"><i class="fa fa-github"></i> {{ member[1].github }}</a></li>
+      <li><a target="_blank" rel="nofollow" href="https://twitter.com/{{ member[1].twitter }}" title="Twitter"><i class="fa fa-twitter"></i> {{ member[1].twitter }}</a></li>
+    {%if member[1].web %}
+      <li><a target="_blank" href="http://{{ member[1].web }}"><i class="fa fa-dribbble"></i> {{ member[1].web }}</a></li>
+    {% endif %}
+    </ul>
+    <p>{{ member[1].bio | markdownify }}</p>
+  </section>
+  {% endfor %}
+</div>

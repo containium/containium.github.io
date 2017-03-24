@@ -1,20 +1,13 @@
 <!DOCTYPE html>
-<html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+{% include head.html %}
+<body data-spy="scroll"{% if page.title == "Home" %} class="home"{% endif %}>
+{% include facebook.html %}
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
+</body>
 </html>
+

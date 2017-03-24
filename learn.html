@@ -1,0 +1,34 @@
+---
+layout: page
+title: Learn
+permalink: /learn/
+---
+
+<section class="blog">
+    <h1 class="page-heading">Blog Posts</h1>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+</section>
+<hr>
+<br>
+<section class="docs">
+    <h1 class="page-heading">Documentation</h1>
+
+    <ul class="post-list">
+        <li>There is of course <a href="https://github.com/containium/containium/blob/master/README.md">the README</a></li>
+        <li>Look at <a href="https://github.com/containium/containium/blob/master/src/containium/standalone.clj">containium.standalone</a> for an example how to build your custom Reactor</a></li>
+        <li>Once we have public CI setup, you'll find the API docs here.</li>
+    </ul>
+</section>

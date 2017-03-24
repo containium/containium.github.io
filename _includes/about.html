@@ -1,0 +1,149 @@
+    <!-- ******ABOUT****** -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="title text-center">What is Containium?</h2>
+            <p class="intro text-center">Containium Reactor is a Clojure Application Server in Clojure with some truly unique features. A full deployment consists of three parts: core services we call <strong>Systems</strong> which your apps can use, your Clojure apps put in a special container, making it what we call <strong>Containium</strong>, and a <strong>Reactor</strong> process that runs these Systems and Containium.</p>
+            <!-- we could really use an image here -->
+            <div class="row">
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-heart"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Dev &amp; Ops friendly</h3>
+                        <p>Configure the Systems (services) once: apps don't have to care about networking settings. Script deployments using simple commands over netcat or activation files.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-crosshairs"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Compose your own Application Server</h3>
+                        <p>Wheras projects like Tomcat and WildFly act like a framework, Containium Systems are built so that you can easily <strong>compose your own “Reactor”</strong>. Easily add custom shared Systems.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-crosshairs"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Adjust to different workloads</h3>
+                        <p>Pick and choose what System should run in each JVM, e.g. embed ElasticSearch and Cassandra or run them seperately, it doesn't matter to applications. This gives <strong>operations</strong> the power to adjust deployment to workloads with no application changes.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-clock-o"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Simple System Design</h3>
+                        <p>Applications only need to implement a Component like start/stop protocol, receiving Systems and configuration as arguments. Quickly spin up Systems locally or during unit tests. <strong>All systems optional.</strong></p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-crosshairs"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Shared Clojure Runtime</h3>
+                        <p><strong>Blazing fast deployments.</strong> Once started, the Clojure runtime is loaded. <strong>Dependency isolated applications</strong> can communicate using Clojure data without serialization.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-coffee"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Simple Configuration as Data</h3>
+                        <p>Deploy your code once or as multiple instances. Simple “deployment descriptor“ (a Clojure map) allowing arbitrary per-instance configuration. Sane conventions reduce the amount of configuration needed.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-tablet"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Multiple Apps, Single nREPL</h3>
+                        <p>nREPL is just another optional System. Connect to a single nREPL socket and eval in every running application or the Application Server itself.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <h3>C*</h3>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Cassandra</h3>
+                        <p><strong>Embedded</strong> Cassandra server or <strong>connect</strong> to an existing cluster? Both? Apps don't care, all they see is Cassandra. Unit test queries and run the same in production.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-coffee"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">ElasticSearch</h3>
+                        <p><strong>Embedded</strong> ElasticSearch server or <strong>connect</strong> to an existing cluster? Both? Apps don't care, all they see is ElasticSearch. Unit test queries and run the same in production. (hmm this sounds familiar)</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-tablet"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Embedded Kafka Server</h3>
+                        <p>Did we mention Apache Kafka yet? It's awesome and <strong>another optional System</strong>. Unit test your queueing code using the real thing.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-tablet"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Asynchronous, daily rolling Ring logs into ElasticSearch.</h3>
+                        <p>The Ring-Analytics System stores requests and reponse ring maps directly and asynchronously in ElasticSearch. No HTTP server log parsing and other complications needed.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-tablet"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Zero Downtime Ring Handlers</h3>
+                        <p><i>New version?</i> If the start function returns successfully, the global ring handler is <strong>atomically</strong> swapped. In progress requests of the old version simply continue until completed. <i>Start fails?</i> No sweat, existing version is still up!</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-tablet"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Distributed Ring Sessions over Cassandra</h3>
+                        <p>Scale your applications by adding servers. Ring sessions are (de)serialized quickly using nippy and stored in Cassandra.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-tablet"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Configure and connect to SMTP servers once</h3>
+                        <p>Your application needs to send e-mail notifications otherwise known as SPAM? No problem! Postal System included.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+            </div><!--//row-->
+        </div><!--//container-->
+    </section><!--//about-->

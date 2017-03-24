@@ -1,10 +1,10 @@
 # Site settings
 title: Containium
+tagline: "Dev & Ops friendly microservices in Clojure"
 email: info@containium.org
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Opinionated libraries and Systems for building isolated applications (Containium)
+  and fully custom Clojure Application Servers (Reactor).
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://containium.org" # the base hostname & protocol for your site
 twitter_username: containium
@@ -12,3 +12,6 @@ github_username:  containium
 
 # Build settings
 markdown: kramdown
+
+kramdown:
+  input: GFM

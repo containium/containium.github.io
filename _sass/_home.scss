@@ -1,0 +1,343 @@
+/* ======= Promo Section ======= */
+.promo {
+  color: #fff;
+  padding: 150px 0 50px 0;
+}
+.promo a, .promo a.btn {
+  color: #fefefe;
+  border: 1px solid rgba(#fff, 0.33);
+  border-radius: 1vw;
+}
+.promo .containium,
+.promo .reactor {
+  margin: 0 1% 0 0;
+}
+.promo a:hover {
+  text-decoration: none;
+}
+.promo a.containium:hover {
+  color: $blue;
+  border-color: $blue;
+}
+.promo a.reactor:hover {
+  color: $yellow;
+  border-color: $yellow;
+}
+
+.promo .title span {
+  display: inline-block;
+  width: 34%;
+}
+
+.promo .title img {
+  width: 28%;
+  margin: -2% 1% 0 1%;
+}
+
+.promo .container {
+  width: 100%;
+}
+
+.promo .title {
+  font-weight: normal;
+  font-size: 6.5vw;
+  letter-spacing: -0.5vw;
+  color: #fefefe;
+  margin-top: 0;
+}
+.promo .title .text-highlight {
+  color: $yellow;
+}
+.promo .intro {
+  font-size: 28px;
+  max-width: 680px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.promo .btns .btn {
+  margin-right: 15px;
+  font-size: 18px;
+  padding: 8px 30px;
+}
+.promo .meta {
+  margin-top: 120px;
+  margin-bottom: 30px;
+  color: #0a7396;
+}
+.promo .meta li {
+  margin-right: 15px;
+}
+.promo .social-media {
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.promo .social-media li {
+  margin-top: 15px;
+}
+.promo .social-media li.facebook-like {
+  margin-top: 0;
+  position: relative;
+  top: -5px;
+}
+
+.about .container,
+.post .post-inner,
+.license .license-inner,
+.license .cta-container,
+.license .cta-container .speech-bubble,
+.contact .author-message .speech-bubble {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+
+/* ======= About Section ======= */
+.about {
+  padding: 40px 0;
+}
+.about .container {
+  padding: 40px;
+  background: $background-color;
+}
+.about .title {
+  color: $darkblue;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+.about .intro {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.about .item {
+  position: relative;
+  margin-bottom: 30px;
+}
+.about .item .icon-holder {
+  position: absolute;
+  color: $blue;
+  left: 30px;
+  top: 0;
+}
+.about .item .icon-holder .fa {
+  font-size: 24px;
+}
+.about .item .content {
+  padding-left: 60px;
+}
+.about .item .content .sub-title {
+  margin-top: 0;
+  color: $blue;
+  font-size: 18px;
+}
+/* ======= Features Section ======= */
+.features {
+  padding: 80px 0;
+  background: rgba($blue, 0.8);
+  color: #fff;
+}
+.features .title {
+  color: $darkblue;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.features a {
+  color: #fefefe;
+}
+.features a:hover {
+  color: #042a36;
+}
+.features .feature-list li {
+  margin-bottom: 10px;
+  color: #fefefe;
+}
+.features .feature-list li .fa {
+  margin-right: 5px;
+  color: #fff;
+}
+/* ======= Posts ======= */
+.post {
+  padding: 80px 0;
+  background: rgba($teal, 0.5);
+}
+.post .title {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.post .post-inner .title {
+  color: $darkblue;
+}
+.post .post-inner {
+  max-width: 800px;
+  background: #fff;
+  padding: 30px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 0 auto;
+}
+.post .post-inner h2 {
+  margin-top: $spacing-unit;
+}
+.post .block {
+  margin-bottom: 60px;
+}
+.post .code-block {
+  margin: 30px inherit;
+}
+.post .code-block pre[class*="language-"] {
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* ======= License Section ======= */
+.license {
+  padding: 80px 0;
+}
+.license .title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  color: $blue;
+}
+.license .license-inner {
+  max-width: 800px;
+  background: #fff;
+  padding: 30px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  margin: 0 auto;
+}
+.license .info {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.license .cta-container {
+  max-width: 540px;
+  margin: 0 auto;
+  margin-top: 60px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.license .cta-container .speech-bubble {
+  background: #d6f3fc;
+  color: $blue;
+  padding: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.license .cta-container .speech-bubble:after {
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  margin-left: -10px;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #d6f3fc;
+}
+.license .cta-container .icon-holder {
+  margin-bottom: 15px;
+}
+.license .cta-container .icon-holder .fa {
+  font-size: 56px;
+}
+.license .cta-container .intro {
+  margin-bottom: 30px;
+}
+/* ======= Contact Section ======= */
+.contact {
+  padding: 80px 0;
+  background: rgba($blue, 0.5);
+  color: #fff;
+}
+.contact .contact-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.contact .title {
+  color: $yellow;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.contact .intro {
+  margin-bottom: 60px;
+}
+.contact a {
+  color: $blue;
+}
+.contact a:hover {
+  color: #042a36;
+}
+.contact .author-message {
+  position: relative;
+  margin-bottom: 60px;
+}
+.contact .author-message .profile {
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  width: 100px;
+  height: 100px;
+}
+.contact .author-message .profile img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+.contact .author-message .speech-bubble {
+  margin-left: 155px;
+  background: $background-color;
+  color: $darkblue;
+  padding: 30px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  position: relative;
+}
+.contact .author-message .speech-bubble .sub-title {
+  color: $darkblue;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.contact .author-message .speech-bubble a {
+  color: #fff;
+}
+.contact .author-message .speech-bubble:after {
+  position: absolute;
+  left: -10px;
+  top: 60px;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid $background-color;
+}
+.contact .author-message .speech-bubble .source {
+  margin-top: 30px;
+}
+.contact .author-message .speech-bubble .source a {
+  color: $darkblue;
+}
+.contact .author-message .speech-bubble .source .title {
+  color: $lightblue;
+}
+
